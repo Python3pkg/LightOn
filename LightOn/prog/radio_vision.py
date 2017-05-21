@@ -3,7 +3,7 @@ class Radio:
         self.sound = sound
         
     def play (self):
-        print ('Saying:', self.sound)
+        print(('Saying:', self.sound))
         print ()
 
 class Television (Radio):
@@ -16,7 +16,7 @@ class Television (Radio):
         Radio.play (self)
         
     def _show (self):
-        print ('Showing:', self.picture)
+        print(('Showing:', self.picture))
         
 tuner = Radio ('Good evening, dear listeners')
 carradio = Radio ('Doowopadoodoo doowopadoodoo')

@@ -20,13 +20,13 @@ class Subject:
 
 class TicTacToeObserver (Observer):
     def update (self):
-        print ('\n'.join ([                 # Google for 'Python' and 'join'
+        print(('\n'.join ([                 # Google for 'Python' and 'join'
             ' '.join ([                     # and also for 'nested list comprehensions'
                 self.symbols [value]        # Use common sense and perseverance
                 for value in row            # to discover what happens here
             ])                              # Write a small test program to
             for row in self.subject.state   # experiment with code like this
-        ]), '\n')                           # Try the same without list comprehensions
+        ]), '\n'))                           # Try the same without list comprehensions
         
 class AlphaObserver (TicTacToeObserver):
     symbols = ('.', 'O', 'X')               # Inherited update will use these symbols
@@ -46,13 +46,13 @@ class TicTacToeSubject (Subject):
     def play (self):
         even = False                        # The odd player starts, the even player is next
         while True:
-            print ('X1' if even else 'O0', 'player' )
-            rowKey = input ('Row (q = quit):')  # Variable rowKey will contain a string of characters
+            print(('X1' if even else 'O0', 'player' ))
+            rowKey = eval(input ('Row (q = quit):'))  # Variable rowKey will contain a string of characters
                                                 # rather than an integer number, so e.g. '3' rather than 3 
             if rowKey == 'q':                   # You can't calculate with strings, only with numbers.
                 break
                 
-            columnKey = input ('Column:')
+            columnKey = eval(input ('Column:'))
             self.state [int (rowKey) - 1][int (columnKey) - 1] = 2 if even else 1   # Convert to integers
             even = not even                 # It's the other player's turn now
             self.notifyObservers ()         # Let the views know something has changed

@@ -6,5 +6,5 @@ def multiply (x, y):
     
 sum = add (3, 4)  # Call the first free function
 
-print ('3 + 4 =', sum)
-print ('3 * 4 =', multiply (3, 4)) # Call the second free function
+print(('3 + 4 =', sum))
+print(('3 * 4 =', multiply (3, 4))) # Call the second free function

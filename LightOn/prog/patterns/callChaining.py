@@ -154,7 +154,7 @@ adultsCursor = (
 	ORDER_BY (lambda r: (r.name, r.age | DESC))
 )
 
-print ('\n', adultsCursor)
+print(('\n', adultsCursor))
 
 menu = (
 	FROM (
@@ -170,7 +170,7 @@ menuCursor = \
 	FROM (menu). \
 	ORDER_BY (lambda r: r.name)
 	
-print ('\n', menuCursor)
+print(('\n', menuCursor))
 
 primateCursor = (
 	FROM (menu) .
@@ -181,4 +181,4 @@ primateCursor = (
 	ORDER_BY (lambda r: r.name)
 )
 
-print ('\n', primateCursor)
+print(('\n', primateCursor))

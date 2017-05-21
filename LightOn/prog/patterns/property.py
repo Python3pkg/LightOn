@@ -29,7 +29,7 @@ class Circle:
 circle = Circle ()
 
 circle.radius = 10
-print ('radius = {}, perimeter = {}, area = {}'. format (circle.radius, circle.perimeter, circle.area))
+print(('radius = {}, perimeter = {}, area = {}'. format (circle.radius, circle.perimeter, circle.area)))
 
 circle.area = math.pi * 10000
-print ('radius = {}, perimeter = {}, area = {}'. format (circle.radius, circle.perimeter, circle.area))
+print(('radius = {}, perimeter = {}, area = {}'. format (circle.radius, circle.perimeter, circle.area)))

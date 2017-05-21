@@ -28,10 +28,10 @@ print (sortedPlanets)
 
 print ('\nTuples can be unpacked into function call parameters with *:')
 print (sortedPlanets)
-print (*sortedPlanets)
+print((*sortedPlanets))
 	
 print ('\nTuples can be glued together, giving a new tuple:')
-print (planets + coordinates)
+print((planets + coordinates))
 
 print ('\nTuples can be polymorphic, containing different types of objects:')
 class Test:
@@ -40,10 +40,10 @@ things = (0, 5.2, 'bike', (1, 2, 3), Test (), Test)
 print (things)
 
 print ('\nTo have a tuple of only one element, it must end with a comma:')
-print (100,)
+print((100,))
 
 print ('\nThis comma at the end is also allowed for tuples of multiple elements:')
-print (100, 200, 300,)
+print((100, 200, 300,))
 
 print ('\nYou can use tuple comprehensions like:')
 even = tuple (i for i in range (20) if i % 2 == 0)	# Or: if not i % 2, since 0 means False

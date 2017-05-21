@@ -8,7 +8,7 @@ class Dog:                      # Define the dog species
         self.sound = sound      # Stores accepted sound into self.sound field inside new dog
 
     def bark (self):            # Define bark method
-        print (self.sound)      # It prints the self.sound field stored inside this dog
+        print((self.sound))      # It prints the self.sound field stored inside this dog
         
     def escape (self):          # Define escape method
         print ('Run to tree')	# The dog will run to the nearest tree

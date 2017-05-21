@@ -6,5 +6,5 @@ functions = [
 
 sum = functions [0] (3, 4) # Call the first lambda function
 
-print ('3 + 4 =', sum)
-print ('3 * 4 =', functions [1] (3, 4)) # Call the second lambda function
+print(('3 + 4 =', sum))
+print(('3 * 4 =', functions [1] (3, 4))) # Call the second lambda function

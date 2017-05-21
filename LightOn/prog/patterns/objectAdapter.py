@@ -16,10 +16,10 @@ class RouteSegmenter:
 
 class AscSequenceControl:
 	def get (self, location):
-		print ('Picked up container at location:', location)
+		print(('Picked up container at location:', location))
 		
 	def put (self, location):
-		print ('Put down container at location:', location)
+		print(('Put down container at location:', location))
 	
 class AscRouteSegmenter (RouteSegmenter):
 	def __init__ (self, ascSequenceControl):

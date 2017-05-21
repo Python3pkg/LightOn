@@ -3,7 +3,7 @@ class Dog:                      # Define the dog species
         self.sound = sound      # Stores accepted sound into self.sound field inside new dog
 
     def _bark (self):           # Define _bark method, not part of interface of dog
-        print (self.sound)      # It prints the self.sound field stored inside this dog
+        print((self.sound))      # It prints the self.sound field stored inside this dog
         
     def escape (self):          # Define escape method
         print ('Hang head')     # The dog hangs his head

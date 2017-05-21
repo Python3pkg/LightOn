@@ -7,33 +7,33 @@ class HumanBeing:
     def walk (self):
         self._begin_walk ()
         for i in range (5):
-            print (self.description, 'is counting', i + 1)
+            print((self.description, 'is counting', i + 1))
         self._end_walk ()
         print ()
         
 class NatureLover (HumanBeing):
     def _begin_walk (self):
-        print (self.description, 'goes to the park')
+        print((self.description, 'goes to the park'))
         
     def _end_walk (self):
-        print (self.description, 'returns from the park')
+        print((self.description, 'returns from the park'))
         
 
 class CouchPotato (HumanBeing):
     def _begin_walk (self):
-        print (self.description, 'lets the dino escape')
+        print((self.description, 'lets the dino escape'))
         
     def _end_walk (self):
-        print (self.description, 'catches the dino')
+        print((self.description, 'catches the dino'))
         
 class OutdoorSleeper (NatureLover, CouchPotato):
     def _begin_walk (self):
         NatureLover._begin_walk (self)
         CouchPotato._begin_walk (self)
-        print (self.description, 'lies on the park bench')
+        print((self.description, 'lies on the park bench'))
         
     def _end_walk (self):
-        print (self.description, 'gets up from the park bench')
+        print((self.description, 'gets up from the park bench'))
         CouchPotato._end_walk (self)
         NatureLover._end_walk (self)
         

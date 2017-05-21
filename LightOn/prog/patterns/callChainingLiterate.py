@@ -344,7 +344,7 @@ adultsCursor = (
 # FROM, WHERE, SELECT and ORDER_BY are called one after another,
 # according to the Call Chaining pattern
 
-print ('\n', adultsCursor)
+print(('\n', adultsCursor))
 # The string representation of the resulting Cursor is printed
 
 menu = (
@@ -366,7 +366,7 @@ menuCursor = \
 	ORDER_BY (lambda r: r.name)
 # Now we have our Cursor
 	
-print ('\n', menuCursor)
+print(('\n', menuCursor))
 # The string representation of the resulting Cursor is printed
 
 primateCursor = (
@@ -381,6 +381,6 @@ primateCursor = (
 # It uses information from the primateFood table to select rows from
 # the menu table that was constructed earlier 
 
-print ('\n', primateCursor)
+print(('\n', primateCursor))
 # Print the result of the nested query
 
